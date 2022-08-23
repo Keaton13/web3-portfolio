@@ -27,6 +27,18 @@
 #programmingWidth {
   width: 100%;
 }
+.mt-5 {
+  margin-bottom: 5%;
+}
+.mt-10 {
+  margin-top: 10%;
+}
+.mb-5 {
+  margin-bottom: 5%;
+}
+.mb-10 {
+  margin-bottom: 10%;
+}
 /* .cd-headline.loading-bar .cd-words-wrapper.is-loading_::after {
   width: 100%;
   transition: width 3s;

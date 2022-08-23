@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ProgressBar from "../progressBar";
+import Link from "next/link";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -98,6 +99,15 @@ export default function AboutDefault({ ActiveIndex }) {
                       <span className="second">1-714-788-1840</span>
                     </li>
                   </ul>
+                  <div className="cavani_tm_title mt-10">
+                    <span className="mb-5">Web2 Portfolio</span>
+                    <div className="cavani_tm_button transition_link">
+                        <p className="mb-5">View my web2 portfolio below!</p>
+                      <Link href="https://dev.keatonkrieger.com">
+                        <a>View</a>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -187,7 +197,7 @@ export default function AboutDefault({ ActiveIndex }) {
                   <div className="list">
                     <div className="univ">
                       <ul>
-                      <li>
+                        <li>
                           <div className="list_inner">
                             <div className="time">
                               <span>2019</span>
@@ -279,127 +289,181 @@ export default function AboutDefault({ ActiveIndex }) {
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/solidity.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://docs.soliditylang.org/en/v0.8.16/#"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://docs.soliditylang.org/en/v0.8.16/#"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/truffle.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://trufflesuite.com/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://trufflesuite.com/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/waffle.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://getwaffle.io/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://getwaffle.io/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
-                      <img
-                        src="img/technologies/chai.webp"
-                        alt=""
-                      />
-                      <a className="cavani_tm_full_link" href="https://ethereum-waffle.readthedocs.io/en/latest/matchers.html"></a>
+                      <img src="img/technologies/chai.webp" alt="" />
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://ethereum-waffle.readthedocs.io/en/latest/matchers.html"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/Moralis.svg" alt="" />
-                      <a className="cavani_tm_full_link" href="https://moralis.io/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://moralis.io/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner" id="blue">
                       <img src="img/technologies/ethers.svg" alt="" />
-                      <a className="cavani_tm_full_link" href="https://docs.ethers.io/v5/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://docs.ethers.io/v5/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner" id="black">
                       <img src="img/technologies/hardhat.svg" alt="" />
-                      <a className="cavani_tm_full_link" href="https://hardhat.org/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://hardhat.org/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/web3.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://web3js.readthedocs.io/en/v1.7.5/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://web3js.readthedocs.io/en/v1.7.5/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/graphql.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://graphql.org/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://graphql.org/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
-                      <img
-                        src="img/technologies/chainlink.webp"
-                        alt=""
-                      />
-                      <a className="cavani_tm_full_link" href="https://chain.link/"></a>
+                      <img src="img/technologies/chainlink.webp" alt="" />
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://chain.link/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/zeppelin.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://www.openzeppelin.com/contracts"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://www.openzeppelin.com/contracts"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/next.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://nextjs.org/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://nextjs.org/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/tailwind.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://tailwindcss.com/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://tailwindcss.com/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/remix.svg" alt="" />
-                      <a className="cavani_tm_full_link" href="https://remix-project.org/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://remix-project.org/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/metamask-1.webp" alt="" />
-                      <a className="cavani_tm_full_link" href="https://metamask.io/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://metamask.io/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/react.png" alt="" />
-                      <a className="cavani_tm_full_link" href="https://reactjs.org/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://reactjs.org/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/redux (1).png" alt="" />
-                      <a className="cavani_tm_full_link" href="https://redux.js.org/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://redux.js.org/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/node.png" alt="" />
-                      <a className="cavani_tm_full_link" href="https://nodejs.org/en/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://nodejs.org/en/"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/js.png" alt="" />
-                      <a className="cavani_tm_full_link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                      ></a>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
                       <img src="img/technologies/AWS.png" alt="" />
-                      <a className="cavani_tm_full_link" href="https://aws.amazon.com/"></a>
+                      <a
+                        className="cavani_tm_full_link"
+                        href="https://aws.amazon.com/"
+                      ></a>
                     </div>
                   </li>
                 </ul>
