@@ -1,0 +1,460 @@
+import React from "react";
+import Image from "next/image";
+import ProgressBar from "../progressBar";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+const circleProgressData = [
+  { language: "English", progress: 95 },
+  { language: "Russian", progress: 80 },
+  { language: "Arabic", progress: 90 },
+];
+
+const progressBarData = [
+  { bgcolor: "#7d7789", completed: 90, title: "Javascript" },
+  { bgcolor: "#7d7789", completed: 80, title: "Solidity" },
+  { bgcolor: "#7d7789", completed: 90, title: "React" },
+  { bgcolor: "#7d7789", completed: 75, title: "Node.js" },
+  { bgcolor: "#7d7789", completed: 70, title: "Next.js" },
+];
+
+const services = [
+  {
+    desc: "Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!.",
+    img: "img/testimonials/1.jpg",
+    info1: "Alexander Walker",
+    info2: "Graphics Designer",
+  },
+  {
+    desc: "I had a little problem and the support was just awesome to quickly solve the situation. And keep going on.",
+    img: "img/testimonials/2.jpg",
+    info1: "Baraka Clinton",
+    info2: "Construction Engineering",
+  },
+  {
+    desc: "These people really know what they are doing! Great customer support availability and supperb kindness.",
+    img: "img/testimonials/3.jpg",
+    info1: "Armin Van Buuren",
+    info2: "Content Manager",
+  },
+];
+
+export default function AboutDefault({ ActiveIndex }) {
+  return (
+    <>
+      {/* <!-- ABOUT --> */}
+      <div
+        className={
+          ActiveIndex === 1
+            ? "cavani_tm_section active animated fadeInUp"
+            : "cavani_tm_section active hidden animated"
+        }
+        id="about_"
+      >
+        <div className="section_inner">
+          <div className="cavani_tm_about">
+            <div className="biography">
+              <div className="cavani_tm_title">
+                <span>About Me</span>
+              </div>
+              <div className="wrapper">
+                <div className="left">
+                  <p>
+                    Hello! My name is <strong>Keaton Kriger.</strong> I am a
+                    blockchain developer that is very passionate and dedicated
+                    to blockchain technology.
+                  </p>
+                  <p>
+                    My passion for blockchain and web development started around
+                    the same time in 2017. I started with web development but
+                    quickly realized I could merge my two passions together as a
+                    blockchain developer, thus starting my journey into Web3!
+                  </p>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>
+                      <span className="first">Name:</span>
+                      <span className="second">Keaton Krieger</span>
+                    </li>
+                    <li>
+                      <span className="first">Address:</span>
+                      <span className="second">Murrieta, California</span>
+                    </li>
+                    <li>
+                      <span className="first">Study:</span>
+                      <span className="second">Learning Fuze</span>
+                    </li>
+                    <li>
+                      <span className="first">Mail:</span>
+                      <span className="second">
+                        <a href="#">keatonkrieger@gmail.com</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="first">Phone:</span>
+                      <span className="second">1-714-788-1840</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="services">
+              <div className="wrapper">
+                <div className="service_list">
+                  <div className="cavani_tm_title">
+                    <span>Services</span>
+                  </div>
+                  <div className="list">
+                    <ul>
+                      <li>Web3 Development</li>
+                      <li>Smart Contract Testing and Creation</li>
+                      <li>Dapps</li>
+                      <li>On-Page SEO</li>
+                      <li>Web Hosting</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="service_list">
+                  <div className="cavani_tm_title">
+                    <span>Interests</span>
+                  </div>
+                  <div className="list">
+                    <ul>
+                      <li>Dirt Bike Riding</li>
+                      <li>Offroad Racing</li>
+                      <li>Skydiving</li>
+                      <li>Muay Tai</li>
+                      <li>Offshore Fishing</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="skills">
+              <div className="wrapper">
+                <div className="programming" id="programmingWidth">
+                  <div className="cavani_tm_title">
+                    <span>Programming</span>
+                  </div>
+                  <div className="cavani_progress">
+                    {progressBarData.map((item, idx) => (
+                      <ProgressBar
+                        key={idx}
+                        bgcolor={item.bgcolor}
+                        completed={item.completed}
+                        title={item.title}
+                      />
+                    ))}
+                  </div>
+                </div>
+                {/* <div className="language">
+                  <div className="cavani_tm_title">
+                    <span>Language</span>
+                  </div>
+                  <div className="circular_progress_bar">
+                    <div className="circle_holder">
+                      {circleProgressData.map((item, idx) => (
+                        <div key={idx}>
+                          <div className="list_inner">
+                            <CircularProgressbar
+                              value={item.progress}
+                              text={`${item.progress}%`}
+                              strokeWidth={3}
+                              stroke="#7d7789"
+                              Language={item.language}
+                              className={"list_inner"}
+                            />
+                            <div className="title">
+                              <span>{item.language}</span>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+            <div className="resume">
+              <div className="wrapper">
+                <div className="education">
+                  <div className="cavani_tm_title">
+                    <span>Education</span>
+                  </div>
+                  <div className="list">
+                    <div className="univ">
+                      <ul>
+                      <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2019</span>
+                            </div>
+                            <div className="place">
+                              <h3>Learning Fuze Bootcamp</h3>
+                              <span>React/React Redux Course</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2017-2018</span>
+                            </div>
+                            <div className="place">
+                              <h3>Learning Fuze</h3>
+                              <span>Full Stack Web Development Bootcamp</span>
+                            </div>
+                          </div>
+                        </li>
+                        {/* <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2008 - 2010</span>
+                            </div>
+                            <div className="place">
+                              <h3>Simone College</h3>
+                              <span>Associate Degree</span>
+                            </div>
+                          </div>
+                        </li> */}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="experience">
+                  <div className="cavani_tm_title">
+                    <span>Experience</span>
+                  </div>
+                  <div className="list">
+                    <div className="univ">
+                      <ul>
+                        <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2021 - 2022</span>
+                            </div>
+                            <div className="place">
+                              <h3>Youthink Academy</h3>
+                              <span>Project Manager/Web Developer</span>
+                            </div>
+                          </div>
+                        </li>
+                        {/* <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2015 - 2018</span>
+                            </div>
+                            <div className="place">
+                              <h3>Avo Corporation</h3>
+                              <span>Content Manager</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2012 - 2015</span>
+                            </div>
+                            <div className="place">
+                              <h3>FC Barcelona</h3>
+                              <span>Football Player</span>
+                            </div>
+                          </div>
+                        </li> */}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="partners">
+              <div className="cavani_tm_title">
+                <span>Technologies</span>
+              </div>
+              <div className="list">
+                <ul>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/solidity.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://docs.soliditylang.org/en/v0.8.16/#"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/truffle.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://trufflesuite.com/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/waffle.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://getwaffle.io/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img
+                        src="img/technologies/chai.webp"
+                        alt=""
+                      />
+                      <a className="cavani_tm_full_link" href="https://ethereum-waffle.readthedocs.io/en/latest/matchers.html"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/Moralis.svg" alt="" />
+                      <a className="cavani_tm_full_link" href="https://moralis.io/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner" id="blue">
+                      <img src="img/technologies/ethers.svg" alt="" />
+                      <a className="cavani_tm_full_link" href="https://docs.ethers.io/v5/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner" id="black">
+                      <img src="img/technologies/hardhat.svg" alt="" />
+                      <a className="cavani_tm_full_link" href="https://hardhat.org/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/web3.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://web3js.readthedocs.io/en/v1.7.5/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/graphql.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://graphql.org/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img
+                        src="img/technologies/chainlink.webp"
+                        alt=""
+                      />
+                      <a className="cavani_tm_full_link" href="https://chain.link/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/zeppelin.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://www.openzeppelin.com/contracts"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/next.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://nextjs.org/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/tailwind.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://tailwindcss.com/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/remix.svg" alt="" />
+                      <a className="cavani_tm_full_link" href="https://remix-project.org/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/metamask-1.webp" alt="" />
+                      <a className="cavani_tm_full_link" href="https://metamask.io/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/react.png" alt="" />
+                      <a className="cavani_tm_full_link" href="https://reactjs.org/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/redux (1).png" alt="" />
+                      <a className="cavani_tm_full_link" href="https://redux.js.org/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/node.png" alt="" />
+                      <a className="cavani_tm_full_link" href="https://nodejs.org/en/"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/js.png" alt="" />
+                      <a className="cavani_tm_full_link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list_inner">
+                      <img src="img/technologies/AWS.png" alt="" />
+                      <a className="cavani_tm_full_link" href="https://aws.amazon.com/"></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* <div className="testimonials">
+              <div className="cavani_tm_title">
+                <span>Testimonials</span>
+              </div>
+              <div className="list">
+                <ul className="">
+                  <li>
+                    <Swiper
+                      slidesPerView={1}
+                      spaceBetween={30}
+                      loop={true}
+                      // navigation={{
+                      //     prevEl: ".custom_prev",
+                      //     nextEl: ".custom_next",
+                      // }}
+                      className="custom-class"
+                      breakpoints={{
+                        768: {
+                          slidesPerView: 2,
+                        },
+                      }}
+                    >
+                      {services.map((item, i) => (
+                        <SwiperSlide key={i}>
+                          <div className="list_inner">
+                            <div className="text">
+                              <i className="icon-quote-left" />
+                              <p>{item.desc}</p>
+                            </div>
+                            <div className="details">
+                              <div className="image">
+                                <div className="main" data-img-url={item.img} />
+                              </div>
+                              <div className="info">
+                                <h3>{item.info1}</h3>
+                                <span>{item.info2}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  </li>
+                </ul>
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </div>
+      {/* <!-- ABOUT --> */}
+    </>
+  );
+}
