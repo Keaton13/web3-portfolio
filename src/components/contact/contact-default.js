@@ -46,19 +46,19 @@ export default function ContactDefault({ ActiveIndex }) {
                                 <li>
                                     <div className="list_inner">
                                         <i className="icon-location"></i>
-                                        <span>Ave Street, New York, USA</span>
+                                        <span>Murrieta, California</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="list_inner">
                                         <i className="icon-mail-3"></i>
-                                        <span><a href="#">hello@cavani.com</a></span>
+                                        <span><a href="#">keatonkrieger@gmail.com</a></span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="list_inner">
                                         <i className="icon-mobile"></i>
-                                        <span>+77 022 444 05 05</span>
+                                        <span>+1-714-788-1840</span>
                                     </div>
                                 </li>
                             </ul>
@@ -152,7 +152,7 @@ export default function ContactDefault({ ActiveIndex }) {
                                             height={375}
                                             style={{ width: "100%" }}
                                             id="gmap_canvas"
-                                            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53185.123206425385!2d-117.23345994778379!3d33.577526528547665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db7d3fc502f2f1%3A0x12d42ef99dd4ed8f!2sMurrieta%2C%20CA!5e0!3m2!1sen!2sus!4v1661286171505!5m2!1sen!2sus"
                                         />
                                         <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon" />
                                         <br />
