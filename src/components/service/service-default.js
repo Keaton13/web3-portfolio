@@ -28,8 +28,8 @@ export default function Service({ ActiveIndex }) {
             date: "August 9, 2021",
             title: "ERC721",
             text1: "NFTS have changed the world in the small time they have been around. They created the ability for digital assests to be specifically owned by a certian person. No coping or forging since they are stored in the blockchain.",
-            text2: "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-            text3: "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
+            text2: "From a utility aspect I believe we have just scratched the surface. NFT's started with art but could be moved into many areas from offical documents to digital tickets stored on the blockchain and more.",
+            text3: "Overall NFT's gave the digital world ownership. "
         },
         {
             img: "img/news/smartContracts.webp",
@@ -37,9 +37,9 @@ export default function Service({ ActiveIndex }) {
             text: "Smart contracts are programs that run on blockchains like Ethereum. They are a collection of code and data that is stored at a specific address on the blockchain",
             date: "August 9, 2021",
             title: "Smart Contracts",
-            text1: "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-            text2: "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-            text3: "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
+            text1: "Smart Contracts are a big part of the Ethereum ecosytem and more like Solana. Smart Contracts give you the ability to put small peices of code on the blockchain that can be called from anywhere. You can store functions and data at the same time.",
+            text2: "The amount of things you can do with smart contracts is endless. For example you could create an insurance payout contract that pays farmers if there hasn't been over a certian amount of rain in a certian area. This data would be grabbed from an api using a chainlink oracle essentally grabbing data from outside the blockchain and trigging a payout function when certian statistics are hit. ",
+            text3: "There are downsides though, trasaction and events on the blockchain require gas for the computing power. This can be quite expensive if the network is busy thus making it not cost effienct for certian applications."
         },
         {
             img: "img/news/testing.webp",
@@ -47,9 +47,9 @@ export default function Service({ ActiveIndex }) {
             text: "Smart contract testing is code that evaluates smart contracts for the quality of code during development. Smart Contracts are more permanent then regualar code",
             date: "August 9, 2021",
             title: "Testing",
-            text1: "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-            text2: "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-            text3: "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
+            text1: "Testing is very important in blockchain development! Once code is on the blockchain it is there forever. The only way to change code in a contract on the blockchain is by a built in update function. This is where testing comes in!",
+            text2: "With testing, we can see how our contract will function and react before paying the gas and submiting the contract to the blockchain. Testing can be tedious but overall could save you from bugs, hacks, and dissapointed users!",
+            text3: ""
         },
         // {
         //     img: "img/news/5.jpg",
