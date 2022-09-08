@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from "next/link";
 import Image from 'next/image';
 import { dataImage } from '../../plugin/plugin'
 import { LightgalleryProvider } from 'react-lightgallery';
@@ -46,10 +47,10 @@ export default function PortfolioDefault({ ActiveIndex }) {
 
     const imagesCollection = [
         [
-            "img/portfolio/4.jpg",
+            "img/portfolio/Kickstart.png",
         ],
         [
-            "img/portfolio/5.jpg",
+            "img/portfolio/Nft-Marketplace.png",
         ]
     ];
 
@@ -67,53 +68,26 @@ export default function PortfolioDefault({ ActiveIndex }) {
 
                         <div className="portfolio_filter">
                             <ul>
-                                <li><a onClick={() => handleOnClick(1)} href="#" className="current" data-filter="*">All</a></li>
-                                <li><a onClick={() => handleOnClick(2)} href="#" data-filter=".vimeo">Vimeo</a></li>
+                                <li><a onClick={() => handleOnClick(1)} href="#" className="current" data-filter="*">Projects</a></li>
+                                {/* <li><a onClick={() => handleOnClick(2)} href="#" data-filter=".vimeo">Vimeo</a></li>
                                 <li><a onClick={() => handleOnClick(3)} href="#" data-filter=".youtube">Youtube</a></li>
                                 <li><a onClick={() => handleOnClick(4)} href="#" data-filter=".soundcloud">Soundcloud</a></li>
                                 <li><a onClick={() => handleOnClick(6)} href="#" data-filter=".detail">Detail</a></li>
-                                <li><a onClick={() => handleOnClick(5)} href="#" data-filter=".image">Image</a></li>
+                                <li><a onClick={() => handleOnClick(5)} href="#" data-filter=".image">Image</a></li> */}
                             </ul>
                         </div>
                         <div className="portfolio_list">
 
                             <ul className={activeTab === 1 ? "gallery_zoom" : "gallery_zoom d-none"}>
-                                <li className="vimeo fadeInUp">
-                                    <div className="list_inner">
-                                        <div className="image">
-                                            <img src="img/thumbs/1-1.jpg" alt="" />
-                                            <div className="main" data-img-url="img/portfolio/2.jpg" onClick={() => setIsOpen2(true)}></div>
-                                            <span className="icon"><i className="icon-vimeo-1"></i></span>
-                                            <div className="details">
-                                                <h3>Kelly Hookin</h3>
-                                                <span>Vimeo</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li className="youtube">
-                                    <div className="list_inner">
-                                        <div className="image">
-                                            <img src="img/thumbs/1-1.jpg" alt="" />
-                                            <div className="main" data-img-url="img/portfolio/1.jpg" onClick={() => setIsOpen(true)}></div>
-                                            <span className="icon"><i className="icon-youtube-play"></i></span>
-                                            <div className="details">
-                                                <h3>Ave Brook</h3>
-                                                <span>Youtube</span>
-                                            </div>
-                                            {/* <a className="cavani_tm_full_link popup-youtube" href="https://www.youtube.com/watch?v=7e90gBu4pas"></a> */}
-                                        </div>
-                                    </div>
-                                </li>
                                 <li className="soundcloud">
                                     <div className="list_inner">
                                         <div className="image">
                                             <img src="img/thumbs/1-1.jpg" alt="" />
-                                            <div className="main" data-img-url="img/portfolio/3.jpg" onClick={toggleModalThree}></div>
+                                            <div className="main" data-img-url="img/portfolio/Nft-Marketplace.png" onClick={toggleModalFour}></div>
                                             <span className="icon"><i className="icon-soundcloud-1"></i></span>
                                             <div className="details">
-                                                <h3>Ashley Flores</h3>
-                                                <span>Soundcloud</span>
+                                                <h3>Nft Marketplace</h3>
+                                                <span>Click here for more info</span>
                                             </div>
                                             {/* <a className="cavani_tm_full_link soundcloude_link mfp-iframe audio" href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></a> */}
                                         </div>
@@ -123,11 +97,11 @@ export default function PortfolioDefault({ ActiveIndex }) {
                                     <div className="list_inner">
                                         <div className="image">
                                             <img src="img/thumbs/1-1.jpg" alt="" />
-                                            <div className="main" data-img-url="img/portfolio/6.jpg" onClick={toggleModalFour}></div>
+                                            <div className="main" data-img-url="img/portfolio/Kickstart.png" onClick={toggleModalFive}></div>
                                             <span className="icon"><i className="icon-doc-text-inv"></i></span>
                                             <div className="details">
-                                                <h3>Alice Moon</h3>
-                                                <span>Detail</span>
+                                                <h3>Kickstart</h3>
+                                                <span>Click here for more info</span>
                                             </div>
                                             {/* <a className="cavani_tm_full_link portfolio_popup" href="#"></a> */}
                                         </div>
@@ -310,12 +284,13 @@ export default function PortfolioDefault({ ActiveIndex }) {
                             <div className="popup_details">
                                 <div className="top_image">
                                     <img src="img/thumbs/4-2.jpg" alt="" />
-                                    <div className="main" data-img-url="img/portfolio/6.jpg" style={{ backgroundImage: "url(./img/portfolio/6.jpg" }} />
+                                    <div className="main" data-img-url="img/portfolio/Nft-Marketplace.png" style={{ backgroundImage: "url(./img/portfolio/Nft-Marketplace.png" }} />
                                 </div>
                                 <div class="portfolio_main_title">
-                                    <h3>Alice Moon</h3>
-                                    <span>Detail</span>
-                                    <div></div>
+                                    <h3>NFT Marketplace</h3>
+                                    <span>Full Stack Web3 Application</span>
+                                    <div>
+                                    </div>
                                 </div>
                                 <div className="main_details">
                                     <div className="textbox">
@@ -325,12 +300,14 @@ export default function PortfolioDefault({ ActiveIndex }) {
                                     <div className="detailbox">
                                         <ul>
                                             <li>
-                                                <span className="first">Client</span>
-                                                <span>Alvaro Morata</span>
+                                                <span className="first">Live Project Link</span>
+                                                <Link href="https://nftmarketplace-fcc.netlify.app/">Here</Link>
                                             </li>
                                             <li>
-                                                <span className="first">Category</span>
-                                                <span><a href="#">Detail</a></span>
+                                                <span className="first">Github</span>
+                                                <Link href="https://github.com/Keaton13/nft-marketplace-thegraph">Front-End</Link>
+                                                <br></br>
+                                                <Link href="https://github.com/Keaton13/hardhat-nft-marketplace-fcc">Back-End</Link>
                                             </li>
                                             <li>
                                                 <span className="first">Date</span>
@@ -348,13 +325,13 @@ export default function PortfolioDefault({ ActiveIndex }) {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="additional_images">
+                                {/* <div className="additional_images">
                                     <ul>
                                         <li>
                                             <div className="list_inner">
                                                 <div className="my_image">
                                                     <img src="./img/thumbs/4-2.jpg" alt="" />
-                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/1.jpg" }}></div>
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/NFT-Connect.png" }}></div>
 
                                                 </div>
                                             </div>
@@ -363,7 +340,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                                             <div className="list_inner">
                                                 <div className="my_image">
                                                     <img src="./img/thumbs/4-2.jpg" alt="" />
-                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/2.jpg" }}></div>
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/NFT-Mint.png" }}></div>
                                                 </div>
                                             </div>
                                         </li>
@@ -371,12 +348,105 @@ export default function PortfolioDefault({ ActiveIndex }) {
                                             <div className="list_inner">
                                                 <div className="my_image">
                                                     <img src="./img/thumbs/4-2.jpg" alt="" />
-                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/3.jpg" }}></div>
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/Nft-Sell.png" }}></div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
+                                </div> */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Modal>
+            <Modal
+                isOpen={isOpen5}
+                onRequestClose={toggleModalFive}
+                contentLabel="My dialog"
+                className="mymodal"
+                overlayClassName="myoverlay"
+                closeTimeoutMS={300}
+                openTimeoutMS={300}
+            >
+                <div className="cavani_tm_modalbox opened">
+                    <div className="box_inner">
+                        <div className="close" onClick={toggleModalFive}>
+                            <a href="#">
+                                <i className="icon-cancel" />
+                            </a>
+                        </div>
+                        <div className="description_wrap">
+                            <div className="popup_details">
+                                <div className="top_image">
+                                    <img src="img/thumbs/4-2.jpg" alt="" />
+                                    <div className="main" data-img-url="img/portfolio/Kickstart.png" style={{ backgroundImage: "url(./img/portfolio/Kickstart.png" }} />
                                 </div>
+                                <div class="portfolio_main_title">
+                                    <h3>Kickstart</h3>
+                                    <span>A defi dao application</span>
+                                    <div>
+                                    </div>
+                                </div>
+                                <div className="main_details">
+                                    <div className="textbox">
+                                        <p>We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance ease of modification. Building mockups strikes the ideal balance ease of modification.</p>
+                                        <p>Mockups are useful both for the creative phase of the project - for instance when you&#39;re trying to figure out your user flows or the proper visual hierarchy - and the production phase when they phase when they will represent the target product. Building mockups strikes the ideal balance ease of modification.</p>
+                                    </div>
+                                    <div className="detailbox">
+                                        <ul>
+                                            <li>
+                                                <span className="first">Live Project Link</span>
+                                                <Link href="https://crypto-kickstart.netlify.app/">Here</Link>
+                                            </li>
+                                            <li>
+                                                <span className="first">Github</span>
+                                                <Link href="https://crypto-kickstart.netlify.app/">Here</Link>
+                                            </li>
+                                            <li>
+                                                <span className="first">Date</span>
+                                                <span>March 07, 2021</span>
+                                            </li>
+                                            <li>
+                                                <span className="first">Share</span>
+                                                <ul className="share">
+                                                    <li><a href="#"><img className="svg" src="./img/svg/social/facebook.svg" alt="" /></a></li>
+                                                    <li><a href="#"><img className="svg" src="./img/svg/social/twitter.svg" alt="" /></a></li>
+                                                    <li><a href="#"><img className="svg" src="./img/svg/social/instagram.svg" alt="" /></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                {/* <div className="additional_images">
+                                    <ul>
+                                        <li>
+                                            <div className="list_inner">
+                                                <div className="my_image">
+                                                    <img src="./img/thumbs/4-2.jpg" alt="" />
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/Kickstart-Create-Request.png" }}></div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="list_inner">
+                                                <div className="my_image">
+                                                    <img src="./img/thumbs/4-2.jpg" alt="" />
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/Kickstart-Create.png" }}></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="list_inner">
+                                                <div className="my_image">
+                                                    <img src="./img/thumbs/4-2.jpg" alt="" />
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/Kickstart-Requests.png" }}></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> */}
                             </div>
                         </div>
                     </div>

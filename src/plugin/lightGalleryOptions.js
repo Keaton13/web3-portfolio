@@ -6,7 +6,7 @@ import {
 import "lightgallery.js/dist/css/lightgallery.css";
 
 export const PhotoItem = ({ image, thumb }) => (
-
+    console.log(image, thumb),
     <LightgalleryItem src={image} thumb={thumb}>
         <li className="image">
             <div className="list_inner">
@@ -16,7 +16,7 @@ export const PhotoItem = ({ image, thumb }) => (
                         <div className="main" style={{ backgroundImage: `url(${image})` }}></div>
                         <span className="icon"><i className="icon-resize-full-alt"></i></span>
                         <div className="details">
-                            <h3>Alla Gorova</h3>
+                            <h3>Kickstart</h3>
                             <span>Image</span>
                         </div>
                     </a>
