@@ -293,6 +293,8 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://docs.soliditylang.org/en/v0.8.16/#"
                       ></a>
+                      <div>
+                      </div>
                     </div>
                   </li>
                   <li>
