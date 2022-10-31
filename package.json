@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.0",
     "next": "12.2",
     "particles.js": "^2.0.0",
     "react": "^18.2.0",
