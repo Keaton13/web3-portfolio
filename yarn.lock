@@ -37,6 +37,14 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@formspree/react@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@formspree/react/-/react-2.4.0.tgz#156249a7832b13c869c0badf86bb920a529ed0a0"
+  integrity sha512-7zPt9tjX0zEiqJhbz5S35+AFyAz76iIJ5Qu9Mw+25kgO+FfmA1i9APakbJG57UsqEGT/dLX2aQa824A87zUtQw==
+  dependencies:
+    "@stripe/react-stripe-js" "^1.7.1"
+    "@stripe/stripe-js" "^1.35.0"
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -153,6 +161,18 @@
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.4.tgz#0c8b74c50f29ee44f423f7416829c0bf8bb5eb27"
   integrity sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==
+
+"@stripe/react-stripe-js@^1.7.1":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-1.14.1.tgz#7b748fa039beb79b549b88e9389fd6148ac8c54f"
+  integrity sha512-PpXsi/NkiDGKILS6bWcM8QwBdC39U7QAT9KFopQ2CdO+kcbXv9l/e8M1saXAQC5AwdgQTTk6Zl0+//qp1faRiw==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@stripe/stripe-js@^1.35.0":
+  version "1.42.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.42.0.tgz#6074d0ac184bd70c9e5b5bc00e126719277e0128"
+  integrity sha512-ZaQpZo5PRv/mN6157OywMW4fc7FIS+eI/tS12I1gU9MdvnL8fzFktuAU/g9FyUOL22E4t9hF1tsfLQAZcQDokQ==
 
 "@swc/helpers@0.4.3":
   version "0.4.3"

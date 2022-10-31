@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import MagicCursor from '../../layout/magic-cursor';
 import { customCursor } from '../../plugin/plugin';
+import { useForm } from '@formspree/react';
 
 export default function ContactDefault({ ActiveIndex }) {
     const [trigger, setTrigger] = useState(false);
@@ -13,12 +14,14 @@ export default function ContactDefault({ ActiveIndex }) {
     const [active, setActive] = useState(null);
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
+    const [state, handleSubmit] = useForm("xgeqnglz")
     const onChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
     const { email, name, msg } = form;
     const onSubmit = (e) => {
         e.preventDefault();
+        handleSubmit(e);
         if (email && name && msg) {
             setSuccess(true);
             setTimeout(() => {
@@ -67,7 +70,7 @@ export default function ContactDefault({ ActiveIndex }) {
                             <div className="left">
                                 <div className="fields">
                                     {/* Contact Form */}
-                                    <form className="contact_form" onSubmit={(e) => onSubmit(e)}>
+                                    <form className="contact_form" onSubmit={(e) => onSubmit(e)} >
                                         <div
                                             className="returnmessage"
                                             data-success="Your message has been received, we will contact you soon."
@@ -133,12 +136,13 @@ export default function ContactDefault({ ActiveIndex }) {
                                                 </li>
                                             </ul>
                                             <div className="cavani_tm_button">
-                                                <input
+                                                <button
                                                     className='a'
+                                                    disabled={state.submitting}
                                                     type="submit"
                                                     id="send_message"
                                                     value="Send Message"
-                                                />
+                                                >Submit</button>
                                             </div>
                                         </div>
                                     </form>
