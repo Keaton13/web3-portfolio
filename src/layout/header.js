@@ -16,7 +16,6 @@ export default function Header({handleOnClick, ActiveIndex}) {
                         <li onClick={() => handleOnClick(1)}><Link href="#about"><a className={ActiveIndex === 1 ? "active" : ""}>About</a></Link></li>
                         <li onClick={() => handleOnClick(2)}><Link href="#portfolio"><a className={ActiveIndex === 2 ? "active" : ""}>Portfolio</a></Link></li>
                         <li onClick={() => handleOnClick(7)}><Link href="#service"><a className={ActiveIndex === 7 ? "active" : ""}>Service</a></Link></li>
-                        <li onClick={() => handleOnClick(3)}><Link href="#news"><a className={ActiveIndex === 3 ? "active" : ""}>News</a></Link></li>
                         <li onClick={() => handleOnClick(4)}><Link href="#contact"><a className={ActiveIndex === 4 ? "active" : ""}>Contact</a></Link></li>
                     </ul>
                     {/* <span className="ccc" /> */}

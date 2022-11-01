@@ -135,7 +135,7 @@ export default function AboutDefault({ ActiveIndex }) {
                     <ul>
                       <li>Dirt Bike Riding</li>
                       <li>Offroad Racing</li>
-                      <li>Skydiving</li>
+                      <li>Elk Hunting</li>
                       <li>Muay Tai</li>
                       <li>Offshore Fishing</li>
                     </ul>

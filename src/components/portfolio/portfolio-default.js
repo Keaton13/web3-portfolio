@@ -239,8 +239,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 className={
                   activeTab === 5 ? "gallery_zoom" : "gallery_zoom d-none"
                 }
-              >
-              </ul>
+              ></ul>
 
               <ul
                 className={
@@ -323,32 +322,32 @@ export default function PortfolioDefault({ ActiveIndex }) {
                     className="main"
                     data-img-url="img/portfolio/Curator-2.png"
                     style={{
-                      backgroundImage:
-                        "url(./img/portfolio/Curator-2.png",
+                      backgroundImage: "url(./img/portfolio/Curator-2.png",
                     }}
                   />
                 </div>
                 <div class="portfolio_main_title">
                   <h3>Curator</h3>
-                  <span>Full Stack Web3 Application that shows wallet stats and NFT's along with current market prices</span>
+                  <span>
+                    Full Stack Web3 Application that shows wallet stats and
+                    NFT's along with current market prices
+                  </span>
                   <div></div>
                 </div>
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      We live in a world where we need to move quickly and
-                      iterate on our ideas as flexibly as possible. Building
-                      mockups strikes the ideal balance ease of modification.
-                      Building mockups strikes the ideal balance ease of
-                      modification.
+                      Curator is my first web3 application created by me that
+                      lets users view wallet statistics like the amount of eth,
+                      total gas spent, and total eth transferred. It also has a
+                      ticker that shows real-time crypto prices and statistics
+                      like coinmarketcap. Lastly, there is an nft tab that lets
+                      people view current nfts in their wallet on the Ethereum
+                      network.
                     </p>
                     <p>
-                      Mockups are useful both for the creative phase of the
-                      project - for instance when you&#39;re trying to figure
-                      out your user flows or the proper visual hierarchy - and
-                      the production phase when they phase when they will
-                      represent the target product. Building mockups strikes the
-                      ideal balance ease of modification.
+                      Curator currently does interact with any smart contacts but uses
+                      web3 injected and Moralis. 
                     </p>
                   </div>
                   <div className="detailbox">
@@ -475,19 +474,26 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      We live in a world where we need to move quickly and
-                      iterate on our ideas as flexibly as possible. Building
-                      mockups strikes the ideal balance ease of modification.
-                      Building mockups strikes the ideal balance ease of
-                      modification.
+                      NFT Marketplace is a functioning Nft Marketplace that lets
+                      users mint, list, update, sell and buy nfts. This project
+                      was created in the Patrick Collins 32-hour blockchain
+                      course. This final project pushed the boundaries of my
+                      web3 knowledge. From creating the contracts backend to
+                      testing and deploying them, this is a full-stack
+                      application. We also created a front end that lets users
+                      interact with metamask and the smart contracts associated
+                      with the project.
                     </p>
                     <p>
-                      Mockups are useful both for the creative phase of the
-                      project - for instance when you&#39;re trying to figure
-                      out your user flows or the proper visual hierarchy - and
-                      the production phase when they phase when they will
-                      represent the target product. Building mockups strikes the
-                      ideal balance ease of modification.
+                      After finishing the project with many hours of debugging
+                      and redeploying to the Goerli network due to Rinkeby
+                      depreciation, I finally got the project running smoothly
+                      and added a mint function. This was done in the backend
+                      previously by running a mint and list function. Now any
+                      user on the site with a logged-in metamask can buy and
+                      mint nfts from my collection. This feature took me a while
+                      to build but it gave me a vast understanding of the whole
+                      development cycle.
                     </p>
                   </div>
                   <div className="detailbox">
@@ -617,19 +623,12 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      We live in a world where we need to move quickly and
-                      iterate on our ideas as flexibly as possible. Building
-                      mockups strikes the ideal balance ease of modification.
-                      Building mockups strikes the ideal balance ease of
-                      modification.
-                    </p>
-                    <p>
-                      Mockups are useful both for the creative phase of the
-                      project - for instance when you&#39;re trying to figure
-                      out your user flows or the proper visual hierarchy - and
-                      the production phase when they phase when they will
-                      represent the target product. Building mockups strikes the
-                      ideal balance ease of modification.
+                      Kickstart is a defi dao application that lets users create
+                      campaigns, view campaigns, contribute, view fund requests,
+                      add fund requests. This project was created in the Stephen
+                      Grider's complete blockchain developemnt course. This
+                      course was 24 hours long and was the first full-stack
+                      blockchain course I completed.
                     </p>
                   </div>
                   <div className="detailbox">
