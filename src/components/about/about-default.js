@@ -102,7 +102,10 @@ export default function AboutDefault({ ActiveIndex }) {
                   <div className="cavani_tm_title mt-10">
                     <span className="mb-5">Web2 Portfolio</span>
                     <div className="cavani_tm_button transition_link">
-                        <p className="mb-5">View my web2 portfolio below!</p>
+                      <p className="mb-5">
+                        View my web2 portfolio below! There I list all the Web2
+                        technologies I know.
+                      </p>
                       <Link href="https://dev.keatonkrieger.com">
                         <a>View</a>
                       </Link>
@@ -143,7 +146,7 @@ export default function AboutDefault({ ActiveIndex }) {
                 </div>
               </div>
             </div>
-            <div className="skills">
+            {/* <div className="skills">
               <div className="wrapper">
                 <div className="programming" id="programmingWidth">
                   <div className="cavani_tm_title">
@@ -159,8 +162,8 @@ export default function AboutDefault({ ActiveIndex }) {
                       />
                     ))}
                   </div>
-                </div>
-                {/* <div className="language">
+                </div> */}
+            {/* <div className="language">
                   <div className="cavani_tm_title">
                     <span>Language</span>
                   </div>
@@ -186,54 +189,10 @@ export default function AboutDefault({ ActiveIndex }) {
                     </div>
                   </div>
                 </div> */}
-              </div>
-            </div>
+            {/* </div>
+            </div> */}
             <div className="resume">
               <div className="wrapper">
-                <div className="education">
-                  <div className="cavani_tm_title">
-                    <span>Education</span>
-                  </div>
-                  <div className="list">
-                    <div className="univ">
-                      <ul>
-                        <li>
-                          <div className="list_inner">
-                            <div className="time">
-                              <span>2019</span>
-                            </div>
-                            <div className="place">
-                              <h3>Learning Fuze Bootcamp</h3>
-                              <span>React/React Redux Course</span>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="list_inner">
-                            <div className="time">
-                              <span>2017-2018</span>
-                            </div>
-                            <div className="place">
-                              <h3>Learning Fuze</h3>
-                              <span>Full Stack Web Development Bootcamp</span>
-                            </div>
-                          </div>
-                        </li>
-                        {/* <li>
-                          <div className="list_inner">
-                            <div className="time">
-                              <span>2008 - 2010</span>
-                            </div>
-                            <div className="place">
-                              <h3>Simone College</h3>
-                              <span>Associate Degree</span>
-                            </div>
-                          </div>
-                        </li> */}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
                 <div className="experience">
                   <div className="cavani_tm_title">
                     <span>Experience</span>
@@ -278,11 +237,55 @@ export default function AboutDefault({ ActiveIndex }) {
                     </div>
                   </div>
                 </div>
+                <div className="education">
+                  <div className="cavani_tm_title">
+                    <span>Education</span>
+                  </div>
+                  <div className="list">
+                    <div className="univ">
+                      <ul>
+                        <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2019</span>
+                            </div>
+                            <div className="place">
+                              <h3>Learning Fuze Bootcamp</h3>
+                              <span>React/React Redux Course</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2017-2018</span>
+                            </div>
+                            <div className="place">
+                              <h3>Learning Fuze</h3>
+                              <span>Full Stack Web Development Bootcamp</span>
+                            </div>
+                          </div>
+                        </li>
+                        {/* <li>
+                          <div className="list_inner">
+                            <div className="time">
+                              <span>2008 - 2010</span>
+                            </div>
+                            <div className="place">
+                              <h3>Simone College</h3>
+                              <span>Associate Degree</span>
+                            </div>
+                          </div>
+                        </li> */}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="partners">
               <div className="cavani_tm_title">
-                <span>Technologies</span>
+                <span>Web3 Technologies</span>
               </div>
               <div className="list">
                 <ul>
@@ -293,8 +296,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://docs.soliditylang.org/en/v0.8.16/#"
                       ></a>
-                      <div>
-                      </div>
+                      <div></div>
                     </div>
                   </li>
                   <li>
