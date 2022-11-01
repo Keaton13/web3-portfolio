@@ -364,42 +364,6 @@ export default function PortfolioDefault({ ActiveIndex }) {
                           Front and Back-end
                         </Link>
                       </li>
-                      <li>
-                        <span className="first">Date</span>
-                        <span>March 07, 2021</span>
-                      </li>
-                      <li>
-                        <span className="first">Share</span>
-                        <ul className="share">
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/facebook.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/twitter.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/instagram.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -514,42 +478,6 @@ export default function PortfolioDefault({ ActiveIndex }) {
                           Back-End
                         </Link>
                       </li>
-                      <li>
-                        <span className="first">Date</span>
-                        <span>March 07, 2021</span>
-                      </li>
-                      <li>
-                        <span className="first">Share</span>
-                        <ul className="share">
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/facebook.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/twitter.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/instagram.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -644,42 +572,6 @@ export default function PortfolioDefault({ ActiveIndex }) {
                         <Link href="https://github.com/Keaton13/Kickstart">
                           Here
                         </Link>
-                      </li>
-                      <li>
-                        <span className="first">Date</span>
-                        <span>March 07, 2021</span>
-                      </li>
-                      <li>
-                        <span className="first">Share</span>
-                        <ul className="share">
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/facebook.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/twitter.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                className="svg"
-                                src="./img/svg/social/instagram.svg"
-                                alt=""
-                              />
-                            </a>
-                          </li>
-                        </ul>
                       </li>
                     </ul>
                   </div>
