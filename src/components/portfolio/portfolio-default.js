@@ -329,25 +329,28 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div class="portfolio_main_title">
                   <h3>Curator</h3>
                   <span>
-                    Full Stack Web3 Application that shows wallet stats and
-                    NFT's along with current market prices
+                    Web3 Application for Wallet Stats,
+                    NFT's, Market Prices and Whale Transactions
                   </span>
                   <div></div>
                 </div>
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      Curator is my first web3 application created by me that
+                    Curator is my first Web3 application created soly by me that
                       lets users view wallet statistics like the amount of eth,
                       total gas spent, and total eth transferred. It also has a
                       ticker that shows real-time crypto prices and statistics
-                      like coinmarketcap. Lastly, there is an nft tab that lets
-                      people view current nfts in their wallet on the Ethereum
-                      network.
+                      like coinmarketcap. There is also an nft tab that lets
+                      people view current nfts in their wallets on the Ethereum
+                      network. The newest feature is a whale stats page that shows
+                      the biggest transactions on the blockchain, similar to WhaleStats.
+                      The purpose of this application is to gather all the necessities of
+                      Web3 under one site!
                     </p>
                     <p>
                       Curator currently does interact with any smart contacts but uses
-                      web3 injected and Moralis. 
+                      web3 injected and Moralis along with apis for coindata and whale stats.
                     </p>
                   </div>
                   <div className="detailbox">
@@ -442,7 +445,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                       users mint, list, update, sell and buy nfts. This project
                       was created in the Patrick Collins 32-hour blockchain
                       course. This final project pushed the boundaries of my
-                      web3 knowledge. From creating the contracts backend to
+                      Web3 knowledge. From creating the smart contracts backend to
                       testing and deploying them, this is a full-stack
                       application. We also created a front end that lets users
                       interact with metamask and the smart contracts associated
@@ -545,19 +548,20 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 </div>
                 <div class="portfolio_main_title">
                   <h3>Kickstart</h3>
-                  <span>A defi dao application</span>
+                  <span>A DeFi Dao Application</span>
                   <div></div>
                 </div>
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      Kickstart is a defi dao application that lets users create
+                      Kickstart is a DeFi Dao application that lets users create
                       campaigns, view campaigns, contribute, view fund requests,
                       add fund requests. This project was created in the Stephen
                       Grider's complete blockchain developemnt course. This
                       course was 24 hours long and was the first full-stack
                       blockchain course I completed.
                     </p>
+                    <p>This application is slightly outdated but still puts together all the nessecary parts of the Web3 development cycle under one application.</p>
                   </div>
                   <div className="detailbox">
                     <ul>
