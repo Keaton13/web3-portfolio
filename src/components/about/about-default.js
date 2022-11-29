@@ -204,6 +204,7 @@ export default function AboutDefault({ ActiveIndex }) {
                           <div className="list_inner">
                             <div className="time">
                               <span>2021 - 2022</span>
+                              <span>December - May</span>
                             </div>
                             <div className="place">
                               <h3>Youthink Academy</h3>
@@ -211,18 +212,17 @@ export default function AboutDefault({ ActiveIndex }) {
                             </div>
                           </div>
                         </li>
-                        {/* <li>
+                        <li>
                           <div className="list_inner">
                             <div className="time">
-                              <span>2015 - 2018</span>
+                              <span>2022 - Present</span>
                             </div>
                             <div className="place">
-                              <h3>Avo Corporation</h3>
-                              <span>Content Manager</span>
+                              <h3>Freelance</h3>
                             </div>
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="list_inner">
                             <div className="time">
                               <span>2012 - 2015</span>
@@ -290,12 +290,13 @@ export default function AboutDefault({ ActiveIndex }) {
               <div className="list">
                 <ul>
                   <li>
-                    <div className="list_inner">
+                    <div className="list_inner container">
                       <img src="img/technologies/solidity.webp" alt="" />
                       <a
                         className="cavani_tm_full_link"
                         href="https://docs.soliditylang.org/en/v0.8.16/#"
                       ></a>
+                      <span className="span-position-class">Solidity</span>
                       <div></div>
                     </div>
                   </li>
@@ -333,6 +334,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://moralis.io/"
                       ></a>
+                      <span className="span-position-class">Moralis</span>
                     </div>
                   </li>
                   <li>
@@ -342,6 +344,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://docs.ethers.io/v5/"
                       ></a>
+                      <span className="span-position-class">Ethers.js</span>
                     </div>
                   </li>
                   <li>
@@ -360,6 +363,8 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://web3js.readthedocs.io/en/v1.7.5/"
                       ></a>
+                      <span className="span-position-class">Web3Js</span>
+
                     </div>
                   </li>
                   <li>
@@ -369,6 +374,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://graphql.org/"
                       ></a>
+                      <span className="span-position-class">GraphQl</span>
                     </div>
                   </li>
                   <li>
@@ -378,6 +384,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://chain.link/"
                       ></a>
+                      <span className="span-position-class">Chainlink</span>
                     </div>
                   </li>
                   <li>
@@ -387,6 +394,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://www.openzeppelin.com/contracts"
                       ></a>
+                      <span className="span-position-class">OpenZeppelin</span>
                     </div>
                   </li>
                   <li>
@@ -432,6 +440,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://reactjs.org/"
                       ></a>
+                      <span className="span-position-class">React</span>
                     </div>
                   </li>
                   <li>
@@ -441,6 +450,7 @@ export default function AboutDefault({ ActiveIndex }) {
                         className="cavani_tm_full_link"
                         href="https://redux.js.org/"
                       ></a>
+                      <span className="span-position-class">Redux</span>
                     </div>
                   </li>
                   <li>
