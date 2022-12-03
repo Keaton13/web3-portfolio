@@ -65,7 +65,7 @@ export default function AboutDefault({ ActiveIndex }) {
                   <p>
                     Hello! My name is <strong>Keaton Kriger.</strong> I am a
                     blockchain developer that is very passionate and dedicated
-                    to blockchain technology.
+                    to learning about the Web3 industry.
                   </p>
                   <p>
                     My passion for blockchain and web development started around

@@ -329,28 +329,29 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div class="portfolio_main_title">
                   <h3>Curator</h3>
                   <span>
-                    Web3 Application for Wallet Stats,
-                    NFT's, Market Prices and Whale Transactions
+                    Web3 Application for Wallet Stats, NFT's, Market Prices and
+                    Whale Transactions
                   </span>
                   <div></div>
                 </div>
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                    Curator is my first Web3 application created soly by me that
-                      lets users view wallet statistics like the amount of eth,
-                      total gas spent, and total eth transferred. It also has a
-                      ticker that shows real-time crypto prices and statistics
-                      like coinmarketcap. There is also an nft tab that lets
-                      people view current nfts in their wallets on the Ethereum
-                      network. The newest feature is a whale stats page that shows
-                      the biggest transactions on the blockchain, similar to WhaleStats.
-                      The purpose of this application is to gather all the necessities of
-                      Web3 under one site!
+                      Curator is my first Web3 application created soly by me
+                      that let's users view wallet statistics like the amount of
+                      eth, total gas spent, and total eth transferred. It also
+                      has a ticker that shows real-time crypto prices and
+                      statistics like coinmarketcap. There is also an nft tab
+                      that lets people view current nfts in their wallets on the
+                      Ethereum network. The newest feature is a whale stats page
+                      that shows the biggest transactions on the blockchain,
+                      similar to WhaleStats. The purpose of this application is
+                      to gather all the necessities of Web3 under one site!
                     </p>
                     <p>
-                      Curator currently does interact with any smart contacts but uses
-                      web3 injected and Moralis along with apis for coindata and whale stats.
+                      Curator currently does interact with any smart contacts
+                      but uses web3 injected and Moralis along with apis for
+                      coindata and whale stats.
                     </p>
                   </div>
                   <div className="detailbox">
@@ -445,22 +446,24 @@ export default function PortfolioDefault({ ActiveIndex }) {
                       users mint, list, update, sell and buy nfts. This project
                       was created in the Patrick Collins 32-hour blockchain
                       course. This final project pushed the boundaries of my
-                      Web3 knowledge. From creating the smart contracts backend to
-                      testing and deploying them, this is a full-stack
-                      application. We also created a front end that lets users
+                      Web3 knowledge. From creating the smart contracts backend
+                      code to testing and deploying them, this is a full-stack
+                      application. We also created a frontend that lets users
                       interact with metamask and the smart contracts associated
                       with the project.
                     </p>
                     <p>
-                      After finishing the project with many hours of debugging
-                      and redeploying to the Goerli network due to Rinkeby
-                      depreciation, I finally got the project running smoothly
-                      and added a mint function. This was done in the backend
-                      previously by running a mint and list function. Now any
-                      user on the site with a logged-in metamask can buy and
-                      mint nfts from my collection. This feature took me a while
-                      to build but it gave me a vast understanding of the whole
-                      development cycle.
+                      After finishing the project, I had to redeploy the
+                      contract to the Goerli network due to Rinkeby
+                      depreciation. Once I had the the project running smoothly
+                      on Georli, I added a mint function and connected it to the
+                      frontend. This was done in the backend previously by
+                      running a mint and list function via command line. Now any
+                      user on the site with a logged-in metamask, connected to
+                      the right network can buy and mint nfts from my
+                      collection. This feature took me a while to build but it
+                      gave me a vast understanding of the whole development
+                      cycle.
                     </p>
                   </div>
                   <div className="detailbox">
@@ -555,13 +558,18 @@ export default function PortfolioDefault({ ActiveIndex }) {
                   <div className="textbox">
                     <p>
                       Kickstart is a DeFi Dao application that lets users create
-                      campaigns, view campaigns, contribute, view fund requests,
-                      add fund requests. This project was created in the Stephen
-                      Grider's complete blockchain developemnt course. This
-                      course was 24 hours long and was the first full-stack
+                      campaigns, view campaigns, contribute, view fund requests
+                      and add fund requests. This project was created in the
+                      Stephen Grider's complete blockchain developemnt course.
+                      This course was 24 hours long and was the first full-stack
                       blockchain course I completed.
                     </p>
-                    <p>This application is slightly outdated but still puts together all the nessecary parts of the Web3 development cycle under one application.</p>
+                    <p>
+                      This application is slightly outdated by using and older
+                      version of Solidity but still puts together all the
+                      nessecary parts of the Web3 development cycle under one
+                      application.
+                    </p>
                   </div>
                   <div className="detailbox">
                     <ul>
