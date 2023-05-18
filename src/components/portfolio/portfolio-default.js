@@ -27,19 +27,22 @@ export default function PortfolioDefault({ ActiveIndex }) {
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
 
-  function toggleModalThree() {
-    setIsOpen3(!isOpen3);
-  }
-
   // image modal popup
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
 
+  function toggleModalThree() {
+    setIsOpen3(!isOpen3);
+  }
   function toggleModalFour() {
     setIsOpen4(!isOpen4);
   }
   function toggleModalFive() {
     setIsOpen5(!isOpen5);
+  }
+  function toggleModalSix() {
+    setIsOpen6(!isOpen6);
   }
 
   const imagesCollection = [
@@ -90,6 +93,46 @@ export default function PortfolioDefault({ ActiveIndex }) {
                   activeTab === 1 ? "gallery_zoom" : "gallery_zoom d-none"
                 }
               >
+                <li className="detail">
+                  <div className="list_inner">
+                    <div className="image">
+                      <img src="img/thumbs/1-1.jpg" alt="" />
+                      <div
+                        className="main"
+                        data-img-url="img/portfolio/Petrol_Trader.png"
+                        onClick={toggleModalSix}
+                      ></div>
+                      <span className="icon">
+                        <i className="icon-doc-text-inv"></i>
+                      </span>
+                      <div className="details" onClick={toggleModalSix}>
+                        <h3>Petrol Trader</h3>
+                        <span>Click here for more info</span>
+                      </div>
+                      {/* <a className="cavani_tm_full_link portfolio_popup" href="#"></a> */}
+                    </div>
+                  </div>
+                </li>
+                <li className="detail">
+                  <div className="list_inner">
+                    <div className="image">
+                      <img src="img/thumbs/1-1.jpg" alt="" />
+                      <div
+                        className="main"
+                        data-img-url="img/portfolio/Curator-V3-3.png"
+                        onClick={toggleModalThree}
+                      ></div>
+                      <span className="icon">
+                        <i className="icon-doc-text-inv"></i>
+                      </span>
+                      <div className="details" onClick={toggleModalThree}>
+                        <h3>Curator</h3>
+                        <span>Click here for more info</span>
+                      </div>
+                      {/* <a className="cavani_tm_full_link portfolio_popup" href="#"></a> */}
+                    </div>
+                  </div>
+                </li>
                 <li className="soundcloud">
                   <div className="list_inner">
                     <div className="image">
@@ -102,7 +145,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                       <span className="icon">
                         <i className="icon-soundcloud-1"></i>
                       </span>
-                      <div className="details">
+                      <div className="details" onClick={toggleModalFour}>
                         <h3>Nft Marketplace</h3>
                         <span>Click here for more info</span>
                       </div>
@@ -122,7 +165,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                       <span className="icon">
                         <i className="icon-doc-text-inv"></i>
                       </span>
-                      <div className="details">
+                      <div className="details" onClick={toggleModalFive}>
                         <h3>Kickstart</h3>
                         <span>Click here for more info</span>
                       </div>
@@ -130,27 +173,6 @@ export default function PortfolioDefault({ ActiveIndex }) {
                     </div>
                   </div>
                 </li>
-                <li className="detail">
-                  <div className="list_inner">
-                    <div className="image">
-                      <img src="img/thumbs/1-1.jpg" alt="" />
-                      <div
-                        className="main"
-                        data-img-url="img/portfolio/Curator-1.png"
-                        onClick={toggleModalThree}
-                      ></div>
-                      <span className="icon">
-                        <i className="icon-doc-text-inv"></i>
-                      </span>
-                      <div className="details">
-                        <h3>Curator</h3>
-                        <span>Click here for more info</span>
-                      </div>
-                      {/* <a className="cavani_tm_full_link portfolio_popup" href="#"></a> */}
-                    </div>
-                  </div>
-                </li>
-
                 {/* Photo Gallery Started */}
                 {/* Photo Gallery End */}
               </ul>
@@ -320,24 +342,30 @@ export default function PortfolioDefault({ ActiveIndex }) {
                   <img src="img/thumbs/4-2.jpg" alt="" />
                   <div
                     className="main"
-                    data-img-url="img/portfolio/Curator-2.png"
+                    data-img-url="img/portfolio/Curator-V3.png"
                     style={{
-                      backgroundImage: "url(./img/portfolio/Curator-2.png",
+                      backgroundImage: "url(./img/portfolio/Curator-V3-2.png",
                     }}
                   />
                 </div>
                 <div class="portfolio_main_title">
                   <h3>Curator</h3>
-                  <span>
-                    Web3 Application for Wallet Stats, NFT's, Market Prices and
-                    Whale Transactions
-                  </span>
+                  <span>Web3 Application</span>
                   <div></div>
                 </div>
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      Curator is my first Web3 application created soly by me
+                      Curator v3 is one of the first ideas that got me started
+                      in my blockchain development journey. It was based off the
+                      idea of having a website that provided everything you
+                      need. Coin stats/pricing, Whale transactions, Trending Nft
+                      Collections and Nft Portfolio value. It uses a variety of
+                      apis and a wallet connect. No smart contracts are involved
+                      in this project.
+                    </p>
+                    {/* <p>
+                      Curator v3 is my first Web3 application created soly by me
                       that let's users view wallet statistics like the amount of
                       eth, total gas spent, and total eth transferred. It also
                       has a ticker that shows real-time crypto prices and
@@ -352,20 +380,138 @@ export default function PortfolioDefault({ ActiveIndex }) {
                       Curator currently does interact with any smart contacts
                       but uses web3 injected and Moralis along with apis for
                       coindata and whale stats.
-                    </p>
+                    </p> */}
                   </div>
                   <div className="detailbox">
                     <ul>
                       <li>
                         <span className="first">Live Project Link</span>
-                        <Link href="https://curatorv2.herokuapp.com/#/">
+                        <Link href="https://curator-v3.netlify.app/">
                           Here
-                        </Link>
+                        </Link>{" "}
+                        <span>*Must use Mainnet</span>
                       </li>
                       <li>
                         <span className="first">Github</span>
-                        <Link href="https://github.com/Keaton13/curator">
-                          Front and Back-end
+                        <Link href="https://github.com/Keaton13/Curator-v3">
+                          Here
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {/* <div className="additional_images">
+                                    <ul>
+                                        <li>
+                                            <div className="list_inner">
+                                                <div className="my_image">
+                                                    <img src="./img/thumbs/4-2.jpg" alt="" />
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/NFT-Connect.png" }}></div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="list_inner">
+                                                <div className="my_image">
+                                                    <img src="./img/thumbs/4-2.jpg" alt="" />
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/NFT-Mint.png" }}></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="list_inner">
+                                                <div className="my_image">
+                                                    <img src="./img/thumbs/4-2.jpg" alt="" />
+                                                    <div className="main" style={{ backgroundImage: "url(./img/portfolio/Nft-Sell.png" }}></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
+      <Modal
+        isOpen={isOpen6}
+        onRequestClose={toggleModalSix}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={300}
+        openTimeoutMS={300}
+      >
+        <div className="cavani_tm_modalbox opened">
+          <div className="box_inner">
+            <div className="close" onClick={toggleModalSix}>
+              <a href="#">
+                <i className="icon-cancel" />
+              </a>
+            </div>
+            <div className="description_wrap">
+              <div className="popup_details">
+                <div className="top_image">
+                  <img src="img/thumbs/4-2.jpg" alt="" />
+                  <div
+                    className="main"
+                    data-img-url="img/portfolio/Curator-V3.png"
+                    style={{
+                      backgroundImage: "url(./img/portfolio/Petrol_Trader.png",
+                    }}
+                  />
+                </div>
+                <div class="portfolio_main_title">
+                  <h3>Petrol Trader</h3>
+                  <span>Full Stack NFT Car Marketplace</span>
+                  <div></div>
+                </div>
+                <div className="main_details">
+                  <div className="textbox">
+                    <p>
+                      This is a Full-Stack NFT marketplace for buying and
+                      selling cars using Ethereum and ERC721 technology. The
+                      project is currently deployed to the Georli test network.
+                    </p>
+                    <p>
+                      Petrol Trader is the most complex dapp I have built. It
+                      uses rainbowkit and wagmi for wallet connect, ethers.js
+                      and web3.js for connecting to the smart contract and
+                      transactions, and truffle for smart contract migrations
+                      and deployment.
+                    </p>
+                    {/* <p>
+                      Curator v3 is my first Web3 application created soly by me
+                      that let's users view wallet statistics like the amount of
+                      eth, total gas spent, and total eth transferred. It also
+                      has a ticker that shows real-time crypto prices and
+                      statistics like coinmarketcap. There is also an nft tab
+                      that lets people view current nfts in their wallets on the
+                      Ethereum network. The newest feature is a whale stats page
+                      that shows the biggest transactions on the blockchain,
+                      similar to WhaleStats. The purpose of this application is
+                      to gather all the necessities of Web3 under one site!
+                    </p>
+                    <p>
+                      Curator currently does interact with any smart contacts
+                      but uses web3 injected and Moralis along with apis for
+                      coindata and whale stats.
+                    </p> */}
+                  </div>
+                  <div className="detailbox">
+                    <ul>
+                      <li>
+                        <span className="first">Live Project Link</span>
+                        <Link href="https://curator-v3.netlify.app/">
+                          Here
+                        </Link>{" "}
+                        <span>*Must use Georli</span>
+                      </li>
+                      <li>
+                        <span className="first">Github</span>
+                        <Link href="https://github.com/Keaton13/PetrolTrader">
+                          Here
                         </Link>
                       </li>
                     </ul>
@@ -436,7 +582,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 </div>
                 <div class="portfolio_main_title">
                   <h3>NFT Marketplace</h3>
-                  <span>Full Stack Web3 Application</span>
+                  <span>Full Stack Web3 NFT Marketplace</span>
                   <div></div>
                 </div>
                 <div className="main_details">
@@ -472,7 +618,8 @@ export default function PortfolioDefault({ ActiveIndex }) {
                         <span className="first">Live Project Link</span>
                         <Link href="https://nftmarketplace-fcc.netlify.app/">
                           Here
-                        </Link>
+                        </Link>{" "}
+                        <span>*Must use Georli</span>
                       </li>
                       <li>
                         <span className="first">Github</span>
@@ -578,6 +725,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                         <Link href="https://crypto-kickstart.netlify.app/">
                           Here
                         </Link>
+                        <span> *Must use Georli</span>
                       </li>
                       <li>
                         <span className="first">Github</span>

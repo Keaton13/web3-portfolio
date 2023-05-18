@@ -1693,7 +1693,7 @@ h6 {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-size: cover;
+	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat
 }
@@ -3541,4 +3541,7 @@ margin-top: 60px;
     top: 45px;
     left: 0px;
     width: 100%;
+}
+.about-image-bottom-margin {
+	margin-bottom: 10%;
 }

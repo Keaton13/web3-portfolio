@@ -17,9 +17,9 @@ export default function Service({ ActiveIndex }) {
             text: "Dapps are decentrailized applications that run on peer to peer networks like Ethereum using smart contracts to interact with the data",
             date: "August 9, 2021",
             title: "DAPPS",
-            text1: "A dapp has its backend code running on a decentralized peer-to-peer network. Contrast this with an app where the backend code is running on centralized servers.",
-            text2: "Some benefits of dapps are zero downtime, privacy, resistance to censorship, and complete data integrity. ",
-            text3: "Like anything theres drawbacks like maintance, performace overhead, network congestion, user experience and centralization."
+            text1: "As a blockchain developer, I understand the power of DAPP technology and how it is revolutionizing the internet. Through my experience building four DAPPS - Petrol Trader, Curator, NFT Marketplace, and Kickstart - I have honed my skills in creating full-stack solutions, from smart contracts to front-end development.",
+            text2: "Petrol Trader is a comprehensive NFT marketplace that I created entirely on my own, while Curator is a site that brings all of Web3 together, featuring coin stats, trending and top NFT data, portfolio value, and Bitcoin and Ethereum whale stats. Kickstart is a defi DAO application that lets users vote on campaings and make dontations.",
+            // text3: "Of course, like any technology, there are drawbacks to DAPPS. Maintenance, performance overhead, network congestion, and a sometimes-confusing user experience can all be challenges. However, the benefits of DAPPS far outweigh the drawbacks, and as a blockchain developer, I am excited to be at the forefront of this technological revolution."
         },
         {
             img: "img/news/erc721.png",
@@ -27,9 +27,9 @@ export default function Service({ ActiveIndex }) {
             text: "ERC721 aka NFT's aka Non-Fungible Tokens are unquie and have diffrent values of other tokens on the same contract",
             date: "August 9, 2021",
             title: "ERC721",
-            text1: "NFTS have changed the world in the small time they have been around. They created the ability for digital assests to be specifically owned by a certian person. No coping or forging since they are stored in the blockchain.",
-            text2: "From a utility aspect I believe we have just scratched the surface. NFT's started with art but could be moved into many areas from offical documents to digital tickets stored on the blockchain and more.",
-            text3: "Overall NFT's gave the digital world ownership. "
+            text1: "As a blockchain developer, my focus and passion lies in ERC721 and NFT technology. My experience building an NFT marketplace and Petrol Trader project has given me a deep understanding of the ERC721 development process, from contract creation to building a front-end that interacts with the contract. I am confident in my skills and committed to advancing my knowledge in this area.",
+            text2: "Moving forward, I am committed to continuously improving my skills and keeping up-to-date with the emerging technologies in ERC721 development and blockchain. I am thrilled to be part of this revolution and excited for what the future holds.",
+            // text3: "Overall, NFTs have fundamentally changed the way we think about ownership in the digital world. They have enabled a new era of asset ownership, where individuals can prove ownership of digital assets that are unique and irreplaceable, providing a sense of authenticity and exclusivity that was previously impossible in the digital world. As a blockchain developer, I am excited about the possibilities that NFTs present and am confident that they will continue to reshape the digital landscape in exciting and innovative ways."
         },
         {
             img: "img/news/smartContracts.webp",
@@ -37,18 +37,18 @@ export default function Service({ ActiveIndex }) {
             text: "Smart contracts are programs that run on blockchains like Ethereum. They are a collection of code and data that is stored at a specific address on the blockchain",
             date: "August 9, 2021",
             title: "Smart Contracts",
-            text1: "Smart Contracts are a big part of the Ethereum ecosytem and more like Solana. Smart Contracts give you the ability to put small peices of code on the blockchain that can be called from anywhere. You can store functions and data at the same time.",
-            text2: "The amount of things you can do with smart contracts is endless. For example you could create an insurance payout contract that pays farmers if there hasn't been over a certian amount of rain in a certian area. This data would be grabbed from an api using a chainlink oracle essentally grabbing data from outside the blockchain and trigging a payout function when certian statistics are hit. ",
-            text3: "There are downsides though, trasaction and events on the blockchain require gas for the computing power. This can be quite expensive if the network is busy thus making it not cost effienct for certian applications."
+            text1: "Smart Contracts are a center piece in we3 development. I have created a few smart contracts now and am getting more comfortable day by day. My latest smart contract is the Dealership contract, along with a basic mint contract for Petrol Trader. These contracts work together, the users mints a nft of their car and saves the tokenURI that is uploaded to ipfs with image urls and other metadata. I then list the nft on the dealership contract giving it ownership over the nfs until it is sold.",
+            text2: "As a blockchain developer, I have come to appreciate the significant benefits of reusable Smart Contracts. Companies such as OpenZeppelin have played a crucial role in simplifying the development process by providing well-crafted and functional Smart Contracts for use in creating DAPPS. In my work on the Dealership Contract and Mint Contract, for example, I leveraged the OpenZeppelin IERC721 contract and Counters contract to help manage token IDs and streamline the development process",
+            text3: "While the benefits of smart contracts are undeniable, there are also some downsides. Transactions and events on the blockchain require computational power, which in turn requires gas fees. This can be costly, particularly if the network is busy, making it inefficient for certain applications. Despite this limitation, smart contracts remain a powerful tool for developers seeking to build decentralized applications that offer secure, transparent, and efficient functionality. As a blockchain developer, I am excited about the potential of smart contracts and am committed to exploring new and innovative use cases for this groundbreaking technology."
         },
         {
-            img: "img/news/testing.webp",
+            img: "img/news/Full-Stack.jpg",
             svg: <SVG_Custom4 />,
-            text: "Smart contract testing is code that evaluates smart contracts for the quality of code during development. Smart Contracts are more permanent then regualar code",
+            text: "Web2 technologies, including Next.js, React, Tailwind, Node.js, and APIs, enabling me to deliver high-quality front-end and back-end solutions for modern web applications.",
             date: "August 9, 2021",
-            title: "Testing",
-            text1: "Testing is very important in blockchain development! Once code is on the blockchain it is there forever. The only way to change code in a contract on the blockchain is by a built in update function. This is where testing comes in!",
-            text2: "With testing, we can see how our contract will function and react before paying the gas and submiting the contract to the blockchain. Testing can be tedious but overall could save you from bugs, hacks, and dissapointed users!",
+            title: "Backend / Front-end",
+            text1: "As a skilled and experienced blockchain developer with a histoy of web2 development, I am well-versed in a variety of web development technologies that power the modern web. From the powerful front-end framework of Next.js and React to the sleek and efficient UI design of Tailwind, I bring a wealth of knowledge and expertise to any project. Additionally, my experience in working with Node.js and APIs allows me to develop highly-scalable and reliable back-end solutions that meet the needs of modern applications.",
+            text2: "My understanding of web2 technology enables me to build powerful and engaging applications that are user-friendly and responsive. Whether working on a complex backend system or designing an intuitive front-end user interface, I possess the skills and experience needed to deliver high-quality results.",
             text3: ""
         },
         // {

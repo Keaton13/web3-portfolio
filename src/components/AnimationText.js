@@ -13,7 +13,7 @@ export const AnimationText1 = () => {
   );
 };
 
-const skills = ["Web", "Blockchain", "Full-Stack"];
+const skills = ["Blockchain", "Full-Stack"];
 export const RotateTextAnimation = () => {
   const [text, setText] = useState(0);
   useEffect(() => {
