@@ -99,7 +99,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                       <img src="img/thumbs/1-1.jpg" alt="" />
                       <div
                         className="main"
-                        data-img-url="img/portfolio/Petrol_Trader.png"
+                        data-img-url="img/portfolio/Petrol_Trader_2.png"
                         onClick={toggleModalSix}
                       ></div>
                       <span className="icon">
@@ -356,31 +356,20 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      Curator v3 is one of the first ideas that got me started
-                      in my blockchain development journey. It was based off the
-                      idea of having a website that provided everything you
-                      need. Coin stats/pricing, Whale transactions, Trending Nft
-                      Collections and Nft Portfolio value. It uses a variety of
-                      apis and a wallet connect. No smart contracts are involved
-                      in this project.
-                    </p>
-                    {/* <p>
-                      Curator v3 is my first Web3 application created soly by me
-                      that let's users view wallet statistics like the amount of
-                      eth, total gas spent, and total eth transferred. It also
-                      has a ticker that shows real-time crypto prices and
-                      statistics like coinmarketcap. There is also an nft tab
-                      that lets people view current nfts in their wallets on the
-                      Ethereum network. The newest feature is a whale stats page
-                      that shows the biggest transactions on the blockchain,
-                      similar to WhaleStats. The purpose of this application is
-                      to gather all the necessities of Web3 under one site!
+                      Curator v3 was a conceptual milestone that sparked my
+                      journey into blockchain development. The platform is
+                      envisioned as a comprehensive web3 resource, delivering
+                      crucial data such as coin stats/pricing, whale
+                      transactions, trending NFT collections, and NFT portfolio
+                      value. At present, this project does not incorporate smart
+                      contracts.
                     </p>
                     <p>
-                      Curator currently does interact with any smart contacts
-                      but uses web3 injected and Moralis along with apis for
-                      coindata and whale stats.
-                    </p> */}
+                      The application employs web3 injection for wallet
+                      connectivity and utilizes APIs from Opensea,
+                      CoinMarketCap, Whale Alert, and Moralis.io to ensure
+                      accurate and timely data retrieval.
+                    </p>
                   </div>
                   <div className="detailbox">
                     <ul>
@@ -458,7 +447,8 @@ export default function PortfolioDefault({ ActiveIndex }) {
                     className="main"
                     data-img-url="img/portfolio/Curator-V3.png"
                     style={{
-                      backgroundImage: "url(./img/portfolio/Petrol_Trader.png",
+                      backgroundImage:
+                        "url(./img/portfolio/Petrol_Trader_2.png",
                     }}
                   />
                 </div>
@@ -470,40 +460,25 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      This is a Full-Stack NFT marketplace for buying and
-                      selling cars using Ethereum and ERC721 technology. The
-                      project is currently deployed to the Georli test network.
+                      Petrol Trader represents a comprehensive, Full-Stack NFT
+                      marketplace facilitating the purchase and sale of cars
+                      leveraging Ethereum and ERC721 technology. The project is
+                      presently operational on the Goerli test network.
                     </p>
                     <p>
-                      Petrol Trader is the most complex dapp I have built. It
-                      uses rainbowkit and wagmi for wallet connect, ethers.js
-                      and web3.js for connecting to the smart contract and
-                      transactions, and truffle for smart contract migrations
-                      and deployment.
+                      As my most intricate decentralized application (DApp) to
+                      date, Petrol Trader deploys Rainbowkit and Wagmi for
+                      wallet connectivity, utilizes both Ethers.js and Web3.js
+                      for seamless interaction with the smart contract and
+                      transaction execution, and employs Truffle for meticulous
+                      smart contract migrations and deployment.
                     </p>
-                    {/* <p>
-                      Curator v3 is my first Web3 application created soly by me
-                      that let's users view wallet statistics like the amount of
-                      eth, total gas spent, and total eth transferred. It also
-                      has a ticker that shows real-time crypto prices and
-                      statistics like coinmarketcap. There is also an nft tab
-                      that lets people view current nfts in their wallets on the
-                      Ethereum network. The newest feature is a whale stats page
-                      that shows the biggest transactions on the blockchain,
-                      similar to WhaleStats. The purpose of this application is
-                      to gather all the necessities of Web3 under one site!
-                    </p>
-                    <p>
-                      Curator currently does interact with any smart contacts
-                      but uses web3 injected and Moralis along with apis for
-                      coindata and whale stats.
-                    </p> */}
                   </div>
                   <div className="detailbox">
                     <ul>
                       <li>
                         <span className="first">Live Project Link</span>
-                        <Link href="https://curator-v3.netlify.app/">
+                        <Link href="https://petroltraderv1.netlify.app/">
                           Here
                         </Link>{" "}
                         <span>*Must use Georli</span>
@@ -588,28 +563,30 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      NFT Marketplace is a functioning Nft Marketplace that lets
-                      users mint, list, update, sell and buy nfts. This project
-                      was created in the Patrick Collins 32-hour blockchain
-                      course. This final project pushed the boundaries of my
-                      Web3 knowledge. From creating the smart contracts backend
-                      code to testing and deploying them, this is a full-stack
-                      application. We also created a frontend that lets users
-                      interact with metamask and the smart contracts associated
-                      with the project.
+                      NFT Marketplace represents a fully functional NFT
+                      platform, empowering users to mint, list, update, sell,
+                      and buy NFTs. Conceived during the comprehensive 32-hour
+                      blockchain course led by Patrick Collins, this project
+                      profoundly expanded the limits of my Web3 expertise. The
+                      development process encompassed the creation of backend
+                      smart contract code, meticulous testing, deployment, and
+                      the development of a user-friendly front-end enabling
+                      interaction with MetaMask and the project's associated
+                      smart contracts.
                     </p>
                     <p>
-                      After finishing the project, I had to redeploy the
-                      contract to the Goerli network due to Rinkeby
-                      depreciation. Once I had the the project running smoothly
-                      on Georli, I added a mint function and connected it to the
-                      frontend. This was done in the backend previously by
-                      running a mint and list function via command line. Now any
-                      user on the site with a logged-in metamask, connected to
-                      the right network can buy and mint nfts from my
-                      collection. This feature took me a while to build but it
-                      gave me a vast understanding of the whole development
-                      cycle.
+                      Upon completion, due to Rinkeby's depreciation, I
+                      transitioned the contract to the Goerli network. Ensuring
+                      smooth operation on the Goerli platform, I further
+                      enhanced the project by incorporating a minting function,
+                      seamlessly connecting it to the front-end. Initially, the
+                      minting and listing functions were executed via command
+                      line in the backend. However, with the new update, any
+                      user logged into MetaMask and connected to the correct
+                      network can directly mint and purchase NFTs from my
+                      collection on the site. While this feature presented a
+                      significant development challenge, it ultimately enriched
+                      my understanding of the comprehensive development cycle.
                     </p>
                   </div>
                   <div className="detailbox">
@@ -704,18 +681,20 @@ export default function PortfolioDefault({ ActiveIndex }) {
                 <div className="main_details">
                   <div className="textbox">
                     <p>
-                      Kickstart is a DeFi Dao application that lets users create
-                      campaigns, view campaigns, contribute, view fund requests
-                      and add fund requests. This project was created in the
-                      Stephen Grider's complete blockchain developemnt course.
-                      This course was 24 hours long and was the first full-stack
-                      blockchain course I completed.
+                      Kickstart, a DeFi DAO application, facilitates user
+                      engagement by enabling the creation and viewing of
+                      campaigns, contributing to campaigns, viewing fund
+                      requests, and adding fund requests. This project was a
+                      significant component of Stephen Grider's comprehensive
+                      24-hour blockchain development course, representing the
+                      first full-stack blockchain course I completed.
                     </p>
                     <p>
-                      This application is slightly outdated by using and older
-                      version of Solidity but still puts together all the
-                      nessecary parts of the Web3 development cycle under one
-                      application.
+                      While the application utilizes an older version of
+                      Solidity, it effectively encapsulates the essential
+                      aspects of the Web3 development cycle in a single,
+                      cohesive application, thus standing as a testament to my
+                      progression in blockchain development.
                     </p>
                   </div>
                   <div className="detailbox">

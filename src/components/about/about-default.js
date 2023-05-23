@@ -501,7 +501,7 @@ export default function AboutDefault({ ActiveIndex }) {
             </div>
             <div className="services">
               <div className="wrapper">
-                <div className="service_list">
+                {/* <div className="service_list">
                   <div className="cavani_tm_title">
                     <span>Services</span>
                   </div>
@@ -514,18 +514,16 @@ export default function AboutDefault({ ActiveIndex }) {
                       <li>Databases</li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
                 <div className="service_list">
                   <div className="cavani_tm_title">
                     <span>Interests</span>
                   </div>
                   <div className="list">
                     <ul>
-                      <li>Dirt Bike Riding</li>
-                      <li>PC Gaming</li>
-                      <li>Elk Hunting</li>
-                      <li>Spear Fishing</li>
-                      <li>Working on Cars</li>
+                      <li>Possess a deep-rooted passion for car restoration, requiring a keen eye for detail, mechanical knowledge and dedication</li>
+                      <li>Love to ride dirt bikes in the winter, keeping my risk management and decision making skills quick and precise</li>
+                      <li>Dedicate significant time to daily strength training in the gym, following workout routines and monitoring nutritional intake</li>
                     </ul>
                   </div>
                 </div>
