@@ -378,7 +378,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                         <Link href="https://curator-v3.netlify.app/">
                           Here
                         </Link>{" "}
-                        <span>*Must use Mainnet</span>
+                        <span>*Must use Mainnet network</span>
                       </li>
                       <li>
                         <span className="first">Github</span>
@@ -481,7 +481,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                         <Link href="https://petroltraderv1.netlify.app/">
                           Here
                         </Link>{" "}
-                        <span>*Must use Georli</span>
+                        <span>*Must use Georli network</span>
                       </li>
                       <li>
                         <span className="first">Github</span>
@@ -596,7 +596,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                         <Link href="https://nftmarketplace-fcc.netlify.app/">
                           Here
                         </Link>{" "}
-                        <span>*Must use Georli</span>
+                        <span>*Must use Georli network</span>
                       </li>
                       <li>
                         <span className="first">Github</span>
@@ -704,7 +704,7 @@ export default function PortfolioDefault({ ActiveIndex }) {
                         <Link href="https://crypto-kickstart.netlify.app/">
                           Here
                         </Link>
-                        <span> *Must use Georli</span>
+                        <span> *Must use Georli network</span>
                       </li>
                       <li>
                         <span className="first">Github</span>
